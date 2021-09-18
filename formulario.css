@@ -1,0 +1,59 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#titulo{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #69A7BF;
+}
+body{
+    margin-left:13%;
+    margin-right:13%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+select:hover{
+    cursor: pointer;
+}
+.datas:hover{
+    cursor: pointer;
+}
+.campo{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #69A7BF;
+}
+.campo input, select{
+    border-radius: 5px;
+    border: solid 1.5px #69A7BF;
+}
+input:focus{
+    outline: none;
+}
+.botao{
+    margin: 2%;
+    background-color: #C4E5F2;
+    color: #69A7BF;
+    padding: 0.5%;
+    border-radius: 5px;
+    border: solid 2px #69A7BF;
+}
+.botao:hover{
+    cursor: pointer;
+    background-color:#69A7BF;
+    color:  #C4E5F2;
+}
+
+fieldset{
+    border-radius: 20px;
+    border-color: #69A7BF;
+}
+label, .datas, .downinput{
+    margin-left: 30px;
+}
+
+
+
