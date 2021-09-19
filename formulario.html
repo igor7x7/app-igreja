@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <div class="conteiner-formulario">
+            <form>
+                <fieldset class="formulario">
+                    <h2 id="titulo">Cadastro de Membro</h2>
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" name="Nome" id="nome">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" name="Sobrenome" id="sobrenome">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Endereço</strong></label></br>
+                        <label for="cep">CEP</label>
+		                    <input id="cep" type="text" required/>
+                        <label for="logradouro">Logradouro</label>
+                            <input id="logradouro" type="text" required/>
+                        <label for="numero">Número</label>
+                            <input id="numero" type="text" /></br>
+                        <label for="complemento">Complemento</label>
+                            <input id="complemento" type="text"/>
+                        <label for="bairro">Bairro</label>
+                            <input id="bairro" type="text" required/>
+                        <label for="uf">Estado</label>
+                        <select id="uf">
+                            <option value=""></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Telefone</strong> (apenas números)</label></br>
+                            <input class="downinput" type="number" name="Telefone" id="telefone" >
+                    </div>
+                    <div class="campo">
+                        <label><strong>Sexo</strong></label></br>
+                        <label>
+                            <input type="radio" name="sexo" value="Feminino">Feminino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="Masculino">Masculino
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Escolaridade</strong> </label></br>
+                        <select class="downinput" name="escolaridade">
+                            <option value="" selected></option>
+                            <option value="ensinoBásico">Ensino básico</option>
+                            <option value="fundamentalIncompleto">Fundamental incompleto</option>
+                            <option value="fundamentalCompleto">Fundamental completo</option>
+                            <option value="médioIncompleto">Ensino médio incompleto</option>
+                            <option value="médioCompleto">Ensino médio completo</option>
+                            <option value="superiorIncompleto">Ensino superior incompleto</option>
+                            <option value="superiorCompleto">Ensino superior completo</option>
+                          </select>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Estado civil</strong></label></br>
+                        <label>
+                            <input type="radio" name="estadocivil" value="solteiro(a)">Solteiro(a)
+                        </label>
+                        <label>
+                            <input type="radio" name="estadocivil" value="casado(a)">Casado(a)
+                        </label>
+                        <label>Nome do(a) cônjuge</label>
+                            <input type="text" name="conjuge" id="conjuge">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Data de nascimento</strong></label></br>
+                        <input class="datas" type="date">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Data de admição</strong></label></br>
+                        <input class="datas" type="date">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Condição</strong></label></br>
+                        <label>
+                            <input type="radio" name="condicao" value="ativo">Ativo
+                        </label>
+                        <label>
+                            <input type="radio" name="condicao" value="inativo">Inativo
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Recebido por</strong></label>
+                        <input type="text" name="recebidoPor" id="recebidoPor">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Data de batismo</strong></label></br>
+                        <input class="datas" type="date">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Cargo eclesiástico</strong></label>
+                        <input type="text" name="cargo" id="cargo">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Nome da Igreja</strong></label>
+                        <input type="text" name="igreja" id="igreja">
+                    </div>
+                    <div class="campo">
+                        <label><strong>RG – Órgão Expedidor</strong> (apenas números)</label></br>
+                        <input class="downinput" type="number" name="rg" id="rg" >
+                    </div>
+                    <button class="botao" type="submit" name="botao">Concluir</button>
+                </fieldset>
+            </form>
+    </div>
+
+    <script type="text/javascript">
+		$("#cep").focusout(function(){
+			$.ajax({
+				url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+				dataType: 'json',
+				success: function(resposta){
+					$("#logradouro").val(resposta.logradouro);
+					$("#complemento").val(resposta.complemento);
+					$("#bairro").val(resposta.bairro);
+					$("#cidade").val(resposta.localidade);
+					$("#uf").val(resposta.uf);
+					$("#numero").focus();
+				}
+			});
+		});
+	</script>
+    
+</body>
+</html>
+
