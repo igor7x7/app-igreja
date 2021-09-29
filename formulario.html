@@ -9,8 +9,8 @@
 </head>
 <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <div class="conteiner-formulario">
-            <form>
+    <div id="container-formulario" class="conteiner-formulario">
+            <form id="formulario-membros">
                 <fieldset class="formulario">
                     <h2 id="titulo">Cadastro de Membro</h2>
                     <div class="campo">
@@ -22,17 +22,17 @@
                     <div class="campo">
                         <label><strong>Endereço</strong></label></br>
                         <label for="cep">CEP</label>
-		                    <input id="cep" type="text" required/>
+		                    <input id="cep" name="cep" type="text" required/>
                         <label for="logradouro">Logradouro</label>
-                            <input id="logradouro" type="text" required/>
+                            <input id="logradouro" name="logradouro" type="text" required/>
                         <label for="numero">Número</label>
-                            <input id="numero" type="text" /></br>
+                            <input id="numero" name="numero" type="text" /></br>
                         <label for="complemento">Complemento</label>
-                            <input id="complemento" type="text"/>
+                            <input id="complemento" name="complemento" type="text"/>
                         <label for="bairro">Bairro</label>
-                            <input id="bairro" type="text" required/>
+                            <input id="bairro" name="bairro" type="text" required/>
                         <label for="uf">Estado</label>
-                        <select id="uf">
+                        <select id="uf" name="estado">
                             <option value=""></option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -102,11 +102,11 @@
                     </div>
                     <div class="campo">
                         <label><strong>Data de nascimento</strong></label></br>
-                        <input class="datas" type="date">
+                        <input class="datas" name="nascimento" type="date">
                     </div>
                     <div class="campo">
                         <label><strong>Data de admição</strong></label></br>
-                        <input class="datas" type="date">
+                        <input class="datas" name="admicao" type="date">
                     </div>
                     <div class="campo">
                         <label><strong>Condição</strong></label></br>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="campo">
                         <label><strong>Data de batismo</strong></label></br>
-                        <input class="datas" type="date">
+                        <input class="datas" name="batismo" type="date">
                     </div>
                     <div class="campo">
                         <label><strong>Cargo eclesiástico</strong></label>
@@ -137,7 +137,7 @@
                         <label><strong>RG – Órgão Expedidor</strong> (apenas números)</label></br>
                         <input class="downinput" type="number" name="rg" id="rg" >
                     </div>
-                    <button class="botao" type="submit" name="botao">Concluir</button>
+                    <button class="botao" type="submit">Concluir</button>
                 </fieldset>
             </form>
     </div>
@@ -158,6 +158,7 @@
 			});
 		});
 	</script>
+    <script type="text/javascript" src="/index.js"></script>
     
 </body>
 </html>

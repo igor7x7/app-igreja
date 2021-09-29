@@ -3,17 +3,16 @@
     margin: 0;
     padding: 0;
 }
+.conteiner-formulario{
+    margin-top: 12vh;
+    width: 82rem;
+    height: 500px;
+}
 #titulo{
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
     color: #69A7BF;
-}
-body{
-    margin-left:13%;
-    margin-right:13%;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 select:hover{
     cursor: pointer;
@@ -48,8 +47,7 @@ input:focus{
 }
 
 fieldset{
-    border-radius: 20px;
-    border-color: #69A7BF;
+    border: none;
 }
 label, .datas, .downinput{
     margin-left: 30px;
