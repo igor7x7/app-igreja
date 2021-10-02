@@ -3,16 +3,70 @@
     margin: 0;
     padding: 0;
 }
+#formulario-membros{
+    display: flex;
+}
 .conteiner-formulario{
     margin-top: 12vh;
-    width: 82rem;
-    height: 500px;
+    width: 175vh;
+    padding-left: 50px;
+}
+.formulario-2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.formulario-1{
+    margin-top: 50px;
+}
+.campo-nome input{
+    width: 300px;
+    height: 25px;
+}
+.campo-civil{
+    margin-top: 20px;
+}
+#conjuge{
+    width: 300px;
+    height: 25px;
+}
+.campo-nascimento{
+    margin-top: 20px;
+}
+.datas{
+    height: 25px;
+}
+.campo-telefone{
+    margin-top: 20px;
+}
+#telefone{
+    width: 300px;
+    height: 25px;
+}
+.campo-escolaridade select{
+    width: 300px;
+    height: 25px;
+}
+.campo-endereco input{
+    height: 25px;
+    margin-bottom: 11px;
+}
+.campo-recebido input{
+    height: 25px;
+}
+#cargo{
+    height: 25px;
+}
+#igreja{
+    height: 25px;
+    margin-left: 25px;
+}
+#rg{
+    height: 25px;
 }
 #titulo{
     text-align: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
     color: #69A7BF;
+    margin-top: 120px;
 }
 select:hover{
     cursor: pointer;
@@ -20,20 +74,17 @@ select:hover{
 .datas:hover{
     cursor: pointer;
 }
-.campo{
-    margin-bottom: 10px;
+.campo-nome,div{
     margin-top: 10px;
-    color: #69A7BF;
 }
-.campo input, select{
-    border-radius: 5px;
-    border: solid 1.5px #69A7BF;
-}
+
 input:focus{
     outline: none;
 }
 .botao{
-    margin: 2%;
+    margin-top: 2%;
+    height: 40px;
+    width: 80px;
     background-color: #C4E5F2;
     color: #69A7BF;
     padding: 0.5%;
@@ -49,9 +100,7 @@ input:focus{
 fieldset{
     border: none;
 }
-label, .datas, .downinput{
-    margin-left: 30px;
-}
+
 
 
 

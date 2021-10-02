@@ -10,17 +10,61 @@
 <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <div id="container-formulario" class="conteiner-formulario">
+        <h2 id="titulo">Cadastro de Membro</h2>
             <form id="formulario-membros">
-                <fieldset class="formulario">
-                    <h2 id="titulo">Cadastro de Membro</h2>
-                    <div class="campo">
-                        <label for="nome"><strong>Nome</strong></label>
+                <fieldset class="formulario-1">
+                    <div class="campo-nome">
+                        <div for="nome"><strong>Nome</strong></div>
                             <input type="text" name="Nome" id="nome">
-                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <div for="sobrenome"><strong>Sobrenome</strong></div>
                             <input type="text" name="Sobrenome" id="sobrenome">
                     </div>
-                    <div class="campo">
-                        <label><strong>Endereço</strong></label></br>
+                    <div class="campo-sexo">
+                        <div><strong>Sexo</strong></div>
+                            <input type="radio" name="sexo" value="Feminino">
+                                Feminino
+                            </input>
+                            <input type="radio" name="sexo" value="Masculino">
+                                Masculino
+                            </input>
+                    </div>
+                    <div class="campo-escolaridade">
+                        <div><strong>Escolaridade</strong></div>
+                        <select class="downinput" name="escolaridade">
+                            <option value="" selected></option>
+                            <option value="ensinoBásico">Ensino básico</option>
+                            <option value="fundamentalIncompleto">Fundamental incompleto</option>
+                            <option value="fundamentalCompleto">Fundamental completo</option>
+                            <option value="médioIncompleto">Ensino médio incompleto</option>
+                            <option value="médioCompleto">Ensino médio completo</option>
+                            <option value="superiorIncompleto">Ensino superior incompleto</option>
+                            <option value="superiorCompleto">Ensino superior completo</option>
+                          </select>
+                    </div>
+                    <div class="campo-civil">
+                        <label><strong>Estado civil</strong></label></br>
+                        <label>
+                            <input type="radio" name="estadocivil" value="solteiro(a)">Solteiro(a)
+                        </label>
+                        <label>
+                            <input type="radio" name="estadocivil" value="casado(a)">Casado(a)
+                        </label>
+                        <div>Nome do(a) cônjuge</div>
+                        <input type="text" name="conjuge" id="conjuge">
+                    </div>
+                    <div class="campo-nascimento">
+                        <div><strong>Data de nascimento</strong></div>
+                        <input class="datas" name="nascimento" type="date">
+                    </div>
+                    <div class="campo-telefone">
+                        <div><strong>Telefone</strong> (apenas números)</div>
+                            <input class="downinput" type="number" name="Telefone" id="telefone" >
+                    </div>
+                </fieldset>
+                <fieldset class="formulario-2">
+
+                    <div class="campo-endereco">
+                        <div><strong>Endereço</strong></div>
                         <label for="cep">CEP</label>
 		                    <input id="cep" name="cep" type="text" required/>
                         <label for="logradouro">Logradouro</label>
@@ -64,47 +108,6 @@
                         </select>
                     </div>
                     <div class="campo">
-                        <label><strong>Telefone</strong> (apenas números)</label></br>
-                            <input class="downinput" type="number" name="Telefone" id="telefone" >
-                    </div>
-                    <div class="campo">
-                        <label><strong>Sexo</strong></label></br>
-                        <label>
-                            <input type="radio" name="sexo" value="Feminino">Feminino
-                        </label>
-                        <label>
-                            <input type="radio" name="sexo" value="Masculino">Masculino
-                        </label>
-                    </div>
-                    <div class="campo">
-                        <label><strong>Escolaridade</strong> </label></br>
-                        <select class="downinput" name="escolaridade">
-                            <option value="" selected></option>
-                            <option value="ensinoBásico">Ensino básico</option>
-                            <option value="fundamentalIncompleto">Fundamental incompleto</option>
-                            <option value="fundamentalCompleto">Fundamental completo</option>
-                            <option value="médioIncompleto">Ensino médio incompleto</option>
-                            <option value="médioCompleto">Ensino médio completo</option>
-                            <option value="superiorIncompleto">Ensino superior incompleto</option>
-                            <option value="superiorCompleto">Ensino superior completo</option>
-                          </select>
-                    </div>
-                    <div class="campo">
-                        <label><strong>Estado civil</strong></label></br>
-                        <label>
-                            <input type="radio" name="estadocivil" value="solteiro(a)">Solteiro(a)
-                        </label>
-                        <label>
-                            <input type="radio" name="estadocivil" value="casado(a)">Casado(a)
-                        </label>
-                        <label>Nome do(a) cônjuge</label>
-                            <input type="text" name="conjuge" id="conjuge">
-                    </div>
-                    <div class="campo">
-                        <label><strong>Data de nascimento</strong></label></br>
-                        <input class="datas" name="nascimento" type="date">
-                    </div>
-                    <div class="campo">
                         <label><strong>Data de admição</strong></label></br>
                         <input class="datas" name="admicao" type="date">
                     </div>
@@ -117,8 +120,8 @@
                             <input type="radio" name="condicao" value="inativo">Inativo
                         </label>
                     </div>
-                    <div class="campo">
-                        <label><strong>Recebido por</strong></label>
+                    <div class="campo-recebido">
+                        <div><strong>Recebido por</strong></div>
                         <input type="text" name="recebidoPor" id="recebidoPor">
                     </div>
                     <div class="campo">
@@ -137,9 +140,9 @@
                         <label><strong>RG – Órgão Expedidor</strong> (apenas números)</label></br>
                         <input class="downinput" type="number" name="rg" id="rg" >
                     </div>
-                    <button class="botao" type="submit">Concluir</button>
                 </fieldset>
             </form>
+            <button class="botao" type="submit">Concluir</button>
     </div>
 
     <script type="text/javascript">
