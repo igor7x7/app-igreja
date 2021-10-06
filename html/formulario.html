@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./formulario.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <div id="container-formulario" class="conteiner-formulario">
         <h2 id="titulo">Cadastro de Membro</h2>
             <form id="formulario-membros">
@@ -60,6 +61,7 @@
                         <div><strong>Telefone</strong> (apenas números)</div>
                             <input class="downinput" type="number" name="Telefone" id="telefone" >
                     </div>
+                    <button id="concluir" class="botao" type="submit">Concluir</button>
                 </fieldset>
                 <fieldset class="formulario-2">
 
@@ -141,8 +143,9 @@
                         <input class="downinput" type="number" name="rg" id="rg" >
                     </div>
                 </fieldset>
+                
             </form>
-            <button class="botao" type="submit">Concluir</button>
+            
     </div>
 
     <script type="text/javascript">
@@ -161,7 +164,8 @@
 			});
 		});
 	</script>
-    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="/js/User.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
     
 </body>
 </html>

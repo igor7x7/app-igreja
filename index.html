@@ -2,22 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script>
-      $(function () {
-        $("#includedContent").load("formulario.html");
-      });
-    </script>
     <title>Controle</title>
   </head>
   <body>
     <div class="conteiner">
       <section class="barra-top"></section>
       <section class="sid-bar">
-        <button class="button-sid" type="button">
+        <button onclick="geral()" id="geral" class="button-sid" type="button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -35,11 +29,9 @@
               d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
             />
           </svg>
-          <div class="text-button">
-            visão geral
-          </div>
+          <div class="text-button">visão geral</div>
         </button>
-        <button class="button-sid">
+        <button onclick="membros()" id="membros" class="button-sid">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -57,9 +49,9 @@
             />
             <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
           </svg>
-          <div class="text-button"> membros </div>
+          <div class="text-button">membros</div>
         </button>
-        <button id="membros" class="button-sid">
+        <button id="carteira" class="button-sid">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -74,7 +66,7 @@
           </svg>
           <div class="text-button">carteira</div>
         </button>
-        <button class="button-sid">
+        <button id="cartas" class="button-sid">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -89,7 +81,7 @@
           </svg>
           <div class="text-button">cartas</div>
         </button>
-        <button class="button-sid">
+        <button id="aniversarios" class="button-sid">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -104,7 +96,7 @@
           </svg>
           <div class="text-button">aniversários</div>
         </button>
-        <button class="button-sid">
+        <button id="agenda" class="button-sid">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -121,8 +113,12 @@
         </button>
       </section>
       <section class="tela">
-        <div id="includedContent"></div>
+        <div id="includedContent">
+          <iframe id="frame" src=""></iframe>
+        </div>
       </section>
     </div>
+    <script type="text/javascript" src="/js/User.js"></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
   </body>
 </html>
