@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-geral{
+    margin-top: 12vh;
+    width: 175vh;
+    padding-left: 50px;
+}
+
+.container-caixa{
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-between;
+    height: 97px;
+}
+
+.membros{
+    width: 25%;
+    height: 100%;
+    margin-right: 30px;
+    background-color: yellow;
+}
+.congregados{
+    width: 25%;
+    height: 100%;
+    margin-right: 30px;
+    background-color:green;
+}
+.nbatizados{
+    width: 25%;
+    height: 100%;
+    margin-right: 30px;
+    background-color:pink;
+}
+.batizados{
+    width: 25%;
+    height: 100%;
+    margin-right: 30px;
+    background-color: cornflowerblue;
+}
