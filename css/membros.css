@@ -1,0 +1,115 @@
+*{
+    font-family: sans-serif;
+}
+
+#container-membros{
+    margin-top: 5%;
+    width: 175vh;
+    padding-left: 50px;
+}
+
+#divTitulo{
+    display: inline-block;
+  }
+
+#divBusca{
+    background-color:#C4E5F2;
+    border:solid 1px #69A7BF;
+    border-radius:15px;
+    width:300px;
+    height: 32px;
+    float: right;
+    margin-top: 2.5%;
+  }
+  
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+    color:black;
+    padding-left: 5%;
+  }
+
+#btnBusca{
+      height: 20px;
+      padding-top: 2%;
+  }
+
+#btnBusca:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+input, textarea, select {
+    outline: 0;
+}
+
+h1{
+    color: #69A7BF;
+}
+
+#col-nome{
+    display: inline-block;
+    color: #69A7BF;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50%;
+}
+
+#col-telefone{
+    display: inline-block;
+    color: #69A7BF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#nome{
+    display: inline-block;
+    width: 50%;
+}
+
+#telefone{
+    display: inline-block;
+    width: 40%;
+}
+
+
+#col-editar{
+    display: inline-block;
+    text-align: right;
+    margin-right: 1%;
+}
+
+#editar{
+    background-color: #C7D9AD;
+    border-radius: 8px;
+    border: none;
+    padding: 20%;
+}
+
+#editar:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#col-excluir{
+    display: inline-block;
+}
+
+#excluir{
+    background-color: #FFBFBF;
+    border-radius: 8px;
+    border: none;
+    padding: 18%;
+}
+
+#excluir:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
