@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/membros.css" />
     <title>Lista de Membros</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="container-membros">
+      <div id="divTitulo">
+        <h1>Membros</h1>
+      </div>
 
-        <div id="divTitulo">
-            <h1>Membros</h1>
+      <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder=" Buscar..." />
+        <img src="/img/lupa.png" id="btnBusca" alt="Buscar" />
+      </div>
+
+      <div id="titulosColunas">
+        <div id="col-nome">
+          <span><br />Nome</span>
         </div>
-
-        <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder=" Buscar..."/>
-            <img src="/img/lupa.png" id="btnBusca" alt="Buscar"/>
+        <div id="col-telefone">
+          <span>Telefone</span>
         </div>
+        <hr />
+      </div>
 
-        <div id="titulosColunas">
-
-            <div id="col-nome">
-                <span><br>Nome</span>
-            </div>
-            <div id="col-telefone">
-                <span>Telefone</span>
-            </div>
-            <hr>
-
+      <div id="dadosMembros">
+        <div id="nome">
+          <span>Mariazinha da Silva Lalala</span>
         </div>
-
-        <div id="dadosMembros">
-
-            <div id="nome">
-                <span>Mariazinha da Silva Lalala</span>
-            </div>
-            <div id="telefone">
-                <span>11 92365-8022</span>
-            </div>
-            <div id="col-editar">
-                <button id="editar" class="botao" type="button">Editar</button>
-            </div>
-            <div id="col-excluir">
-                <button id="excluir" class="botao" type="button">Excluir</button>
-            </div>
-            <hr>
-
-            <div id="nome">
-                <span>Joãozinho de Souza Lululi</span>
-            </div>
-            <div id="telefone">
-                <span>11 98845-9762</span>
-            </div>
-            <div id="col-editar">
-                <button id="editar" class="botao" type="button">Editar</button>
-            </div>
-            <div id="col-excluir">
-                <button id="excluir" class="botao" type="button">Excluir</button>
-            </div>
-            <hr>
-
+        <div id="telefone">
+          <span>11 92365-8022</span>
         </div>
+        <div id="col-editar">
+          <button id="editar" class="botao" type="button">
+            Editar
+          </button>
+        </div>
+        <div id="col-excluir">
+          <button id="excluir" class="botao" type="button">Excluir</button>
+        </div>
+        <hr />
 
+        <div id="nome">
+          <span>Joãozinho de Souza Lululi</span>
+        </div>
+        <div id="telefone">
+          <span>11 98845-9762</span>
+        </div>
+        <div id="col-editar">
+          <button id="editar" class="botao" type="button">Editar</button>
+        </div>
+        <div id="col-excluir">
+          <button id="excluir" class="botao" type="button">Excluir</button>
+        </div>
+        <hr />
+      </div>
     </div>
-</body>
+  </body>
 </html>

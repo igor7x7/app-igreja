@@ -14,16 +14,16 @@ iframe{
 .barra-top {
   background-color: #8ab8da;
   position: fixed;
-  height: 90px;
+  height: 60px;
   width: 100%;
 }
 .sid-bar {
-  padding-top: 6%;
+  padding-top: 4%;
   background-color: #486173;
   width: 12%;
   height: 78vh;
-  margin-top: 10vh;
 }
+
 button {
   color: white;
   padding: 0;
